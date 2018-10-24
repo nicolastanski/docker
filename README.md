@@ -6,7 +6,6 @@ docker-compose up -d
 ## Docker Stop
 docker-compose stop
 
-
 ## List Images
 docker images -a
 
@@ -20,10 +19,16 @@ docker rmi $(docker images -a -q)
 docker ps -a
 
 ## Remove Containers
-docker rm ID_or_Name ID_or_Name
+docker rm CONTAINER_ID_1 CONTAINER_ID_2 ...
 
 ## Access Container
 docker exec -it CONTAINER_ID bash
 
+## Build Docker Image
+docker build -t IMAGE_NAME .
+
+
+## References
+https://tableless.com.br/iniciando-com-o-docker-criando-suas-proprias-imagens/
 
 https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
