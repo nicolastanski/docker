@@ -6,6 +6,8 @@ docker-compose up -d
 ## Docker Stop
 docker-compose stop
 
+docker stop CONTAINER_ID
+
 ## List Images
 docker images -a
 
