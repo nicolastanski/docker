@@ -29,6 +29,8 @@ docker exec -it CONTAINER_ID bash
 ## Build Docker Image
 docker build -t IMAGE_NAME .
 
+## Access Container SSH
+docker run -i -t CONTAINER_ID  /bin/bash
 
 ## References
 https://tableless.com.br/iniciando-com-o-docker-criando-suas-proprias-imagens/
