@@ -32,6 +32,10 @@ docker build -t IMAGE_NAME .
 ## Access Container SSH
 docker run -i -t CONTAINER_ID  /bin/bash
 
+## Get IP Containers
+docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+ 
+ 
 ## References
 https://tableless.com.br/iniciando-com-o-docker-criando-suas-proprias-imagens/
 
